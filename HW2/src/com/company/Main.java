@@ -4,12 +4,12 @@ import java.util.Scanner;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
+        // write your code here
         int menu;
         do {
             printMenu();
             Scanner in = new Scanner(System.in);
-            System.out.print("Введите номер меню: ");
+            System.out.print("Enter menu number: ");
             menu = in.nextInt();
             switch (menu) {
                 case 1:
@@ -19,7 +19,6 @@ public class Main {
                     System.out.print("Input second number: ");
                     double b = input1.nextDouble();
                     System.out.printf("Average of two numbers: %.3f \n", twoNumAverage(a, b));
-                    input1.close();
                     break;
                 case 2:
                     Scanner input2 = new Scanner(System.in);
@@ -32,7 +31,6 @@ public class Main {
                         array[i] = input2.nextDouble(); // Заполняем массив элементами, введёнными с клавиатуры
                     }
                     System.out.printf("Average of %d numbers: %.3f \n", size, nNumAverage(array));
-                    input2.close();
                     break;
                 case 3:
                     Scanner input3 = new Scanner(System.in);
@@ -55,7 +53,7 @@ public class Main {
     }
 
     static void printMenu() {
-        System.out.println("Average of two numbers ---> 1");
+        System.out.println("\nAverage of two numbers ---> 1");
         System.out.println("Average of arbitrary amount of numbers ---> 2");
         System.out.println("Bank info: Accumulated amount of money & Accured interest on the deposit ---> 3");
         System.out.println("Close menu ---> 4 \n");
@@ -73,17 +71,19 @@ public class Main {
         return sum / arr.length;
     }
 
-    static void depositInfo(double deposit, double percent, double term){
+    static void depositInfo(double deposit, double percent, double term) {
         int years = (int) Math.ceil(term);
         double recieved_money[] = new double[years];
         double recieved_percent[] = new double[years];
 
         for (int i = 0; i < years; i++) {
-            recieved_percent[i] = deposit * percent / 100;
+            if (years != term) {
+                recieved_percent[i] = deposit * percent * (years - term) / 100;
+            }
+            else recieved_percent[i] = deposit * percent / 100;
             recieved_money[i] = deposit + recieved_percent[i];
             deposit = recieved_money[i];
-            System.out.printf("Info for %d year: accumulated money %.3f; recieved money from per cent: %.3f\n", recieved_money[i], recieved_percent[i]);
+            System.out.printf("Info for %d year: accumulated money %.3f; recieved money from per cent: %.3f\n", i + 1, recieved_money[i], recieved_percent[i]);
         }
-
     }
 }
