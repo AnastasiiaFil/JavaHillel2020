@@ -14,5 +14,7 @@ public class Main {
 
         auto.fuelLeft(150);
         auto.howMuchAdd();
+
+        auto.showSpentMoney();
     }
 }
