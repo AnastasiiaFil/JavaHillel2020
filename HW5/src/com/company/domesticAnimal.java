@@ -4,11 +4,13 @@ public abstract class domesticAnimal extends Animal {
     protected String name;
     protected boolean isVaccinated;
 
-    domesticAnimal(boolean vaccinated){
+    domesticAnimal(int age, double weight, String color, boolean vaccinated){
+        super(age, weight, color);
         isVaccinated = vaccinated;
     }
 
-    domesticAnimal(boolean vaccinated, String animalName){
+    domesticAnimal(int age, double weight, String color, boolean vaccinated, String animalName){
+        super(age, weight, color);
         isVaccinated = vaccinated;
         name = animalName;
     }
@@ -23,5 +25,13 @@ public abstract class domesticAnimal extends Animal {
         if(name != null){
             System.out.print("My name is " + name);
         }
+    }
+
+    @Override
+    public String toString(){
+        if(name != null){
+            return super.toString() + "; Name = " + name + "; isVaccinated = " + isVaccinated;
+        }
+        return super.toString() + "; isVaccinated = " + isVaccinated;
     }
 }

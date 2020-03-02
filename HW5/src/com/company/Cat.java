@@ -2,20 +2,17 @@ package com.company;
 
 public class Cat extends domesticAnimal {
 
-    Cat(boolean vaccinated){
-        super(vaccinated);
+    Cat(int age, double weight, String color, boolean vaccinated){
+        super(age, weight, color, vaccinated);
     }
 
-    Cat(boolean vaccinated, String catName){
-        super(vaccinated, catName);
+    Cat(int age, double weight, String color, boolean vaccinated, String catName){
+        super(age, weight, color, vaccinated, catName);
     }
 
     @Override
     public void Voice(){
         super.Voice();
-//        if(name != null){
-//            System.out.print("My name is " + name);
-//        }
         System.out.println(" Meow-meow-meow!");
     }
 }

@@ -1,12 +1,12 @@
 package com.company;
 
 public class Hamster extends domesticAnimal {
-    Hamster(boolean vaccinated){
-        super(vaccinated);
+    Hamster(int age, double weight, String color, boolean vaccinated){
+        super(age, weight, color, vaccinated);
     }
 
-    Hamster(boolean vaccinated, String hamsterName){
-        super(vaccinated, hamsterName);
+    Hamster(int age, double weight, String color, boolean vaccinated, String catName){
+        super(age, weight, color, vaccinated, catName);
     }
 
     @Override

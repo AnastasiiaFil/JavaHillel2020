@@ -1,8 +1,8 @@
 package com.company;
 
 public class Lion extends wildAnimal {
-    Lion(boolean predator){
-        super(predator);
+    Lion(int age, double weight, String color, boolean predator){
+        super(age, weight, color, predator);
     }
 
 }

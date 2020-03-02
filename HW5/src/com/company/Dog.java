@@ -1,12 +1,12 @@
 package com.company;
 
 public class Dog extends  domesticAnimal {
-    Dog(boolean vaccinated){
-        super(vaccinated);
+    Dog(int age, double weight, String color, boolean vaccinated){
+        super(age, weight, color, vaccinated);
     }
 
-    Dog(boolean vaccinated, String dogName){
-        super(vaccinated, dogName);
+    Dog(int age, double weight, String color, boolean vaccinated, String catName){
+        super(age, weight, color, vaccinated, catName);
     }
 
     @Override

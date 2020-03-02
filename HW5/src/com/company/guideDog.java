@@ -3,25 +3,14 @@ package com.company;
 public class guideDog extends domesticAnimal{
     private boolean isTrained;
 
-    guideDog(boolean vaccinated, boolean trained){
-        super(vaccinated);
+    guideDog(int age, double weight, String color, boolean vaccinated, boolean trained){
+        super(age, weight, color, vaccinated);
         isTrained = trained;
     }
 
-    guideDog(boolean vaccinated, String gdName, boolean trained){
-        super(vaccinated, gdName);
+    guideDog(int age, double weight, String color, String gdName, boolean vaccinated, boolean trained){
+        super(age, weight, color, vaccinated, gdName);
         isTrained = trained;
-    }
-
-    @Override
-    public void Voice(){
-        super.Voice();
-//        if(name != null){
-//            System.out.print("My name is " + name + ".");
-//        }
-        if(isTrained)
-            System.out.print(" I can take you home.");
-        System.out.println(" Woof-woof-woof!");
     }
 
     public void takeHome(){
@@ -29,5 +18,18 @@ public class guideDog extends domesticAnimal{
             System.out.println("I can take you home, follow me!");
         else
             System.out.println("Sorry, I am not trained...");
+    }
+
+    @Override
+    public void Voice(){
+        super.Voice();
+        if(isTrained)
+            System.out.print(" I can take you home.");
+        System.out.println(" Woof-woof-woof!");
+    }
+
+    @Override
+    public String toString(){
+        return super.toString() + "; isTrained = " + isTrained;
     }
 }
