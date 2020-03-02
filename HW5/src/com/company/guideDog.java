@@ -8,10 +8,10 @@ public class guideDog extends domesticAnimal{
         isTrained = trained;
     }
 
-    guideDog(boolean vaccinated, boolean trained, String catName){
+    guideDog(boolean vaccinated, boolean trained, String gdName){
         isVaccinated = vaccinated;
         isTrained = trained;
-        name = catName;
+        name = gdName;
     }
 
     @Override
