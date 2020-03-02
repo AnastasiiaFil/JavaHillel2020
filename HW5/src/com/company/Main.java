@@ -13,7 +13,7 @@ public class Main {
         Lion l = new Lion(true);
         Giraffe g = new Giraffe(false);
         Crocodile croc =  new Crocodile(true);
-        guideDog gd = new guideDog(true, true, "Jeck");
+        guideDog gd = new guideDog(true,"Jeck", true);
 
         c1.Voice();
         c2.Voice();

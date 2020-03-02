@@ -2,20 +2,16 @@ package com.company;
 
 public class Dog extends  domesticAnimal {
     Dog(boolean vaccinated){
-        isVaccinated = vaccinated;
+        super(vaccinated);
     }
 
     Dog(boolean vaccinated, String dogName){
-        isVaccinated = vaccinated;
-        name = dogName;
+        super(vaccinated, dogName);
     }
 
     @Override
     public void Voice(){
         super.Voice();
-        if(name != null){
-            System.out.print("My name is " + name);
-        }
         System.out.println("Woof-woof-woof!");
     }
 }

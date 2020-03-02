@@ -2,17 +2,16 @@ package com.company;
 
 public class Fish extends domesticAnimal {
     Fish(boolean vaccinated){
-        isVaccinated = vaccinated;
+        super(vaccinated);
     }
 
     Fish(boolean vaccinated, String fishName){
-        isVaccinated = vaccinated;
-        name = fishName;
+        super(vaccinated, fishName);
     }
 
     @Override
     public void Voice(){
-        super.Voice();
+//        super.Voice();
         System.out.println(" ...!");
     }
 }

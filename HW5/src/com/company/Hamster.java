@@ -2,12 +2,11 @@ package com.company;
 
 public class Hamster extends domesticAnimal {
     Hamster(boolean vaccinated){
-        isVaccinated = vaccinated;
+        super(vaccinated);
     }
 
     Hamster(boolean vaccinated, String hamsterName){
-        isVaccinated = vaccinated;
-        name = hamsterName;
+        super(vaccinated, hamsterName);
     }
 
     @Override

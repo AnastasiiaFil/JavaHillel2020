@@ -4,22 +4,21 @@ public class guideDog extends domesticAnimal{
     private boolean isTrained;
 
     guideDog(boolean vaccinated, boolean trained){
-        isVaccinated = vaccinated;
+        super(vaccinated);
         isTrained = trained;
     }
 
-    guideDog(boolean vaccinated, boolean trained, String gdName){
-        isVaccinated = vaccinated;
+    guideDog(boolean vaccinated, String gdName, boolean trained){
+        super(vaccinated, gdName);
         isTrained = trained;
-        name = gdName;
     }
 
     @Override
     public void Voice(){
         super.Voice();
-        if(name != null){
-            System.out.print("My name is " + name + ".");
-        }
+//        if(name != null){
+//            System.out.print("My name is " + name + ".");
+//        }
         if(isTrained)
             System.out.print(" I can take you home.");
         System.out.println(" Woof-woof-woof!");
