@@ -24,7 +24,7 @@ public class guideDog extends domesticAnimal{
     public void Voice(){
         super.Voice();
         if(isTrained)
-            System.out.print(" I can take you home.");
+            System.out.print(" I'm trained.");
         System.out.println(" Woof-woof-woof!");
     }
 

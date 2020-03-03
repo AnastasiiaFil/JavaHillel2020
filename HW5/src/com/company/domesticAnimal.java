@@ -1,8 +1,8 @@
 package com.company;
 
 public abstract class domesticAnimal extends Animal {
-    protected String name;
-    protected boolean isVaccinated;
+    private String name;
+    private boolean isVaccinated;
 
     domesticAnimal(int age, double weight, String color, boolean vaccinated){
         super(age, weight, color);
@@ -15,15 +15,11 @@ public abstract class domesticAnimal extends Animal {
         name = animalName;
     }
 
-    public void getName(){
-        System.out.println("My Name is " + name);
-    }
-
     @Override
     public void Voice(){
         super.Voice();
         if(name != null){
-            System.out.print("My name is " + name);
+            System.out.print("my name is " + name);
         }
     }
 

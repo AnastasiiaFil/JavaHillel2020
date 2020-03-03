@@ -1,7 +1,7 @@
 package com.company;
 
 public abstract class wildAnimal extends Animal{
-    protected boolean isPredator;
+    private boolean isPredator;
 
     wildAnimal(int age, double weight, String color, boolean predator){
         super(age, weight, color);

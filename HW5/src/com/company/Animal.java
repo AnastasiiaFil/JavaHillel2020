@@ -20,24 +20,12 @@ public abstract class Animal {
         System.out.print("Hello, ");
     }
 
-    public void showId(){ System.out.println("Id: " + id); }
-
-    public void showAge(){ System.out.println("My age is: " + age); }
-
     public void setAge(int Age){
         age = Age;
     }
 
-    public void showWeight(){
-        System.out.println("My weight is: " + weight);
-    }
-
     public void setWeight(double Weight){
         weight = Weight;
-    }
-
-    public void showColor(){
-        System.out.println("My color is " + color);
     }
 
     public void setColor(String Color){

@@ -5,8 +5,8 @@ public class Dog extends  domesticAnimal {
         super(age, weight, color, vaccinated);
     }
 
-    Dog(int age, double weight, String color, boolean vaccinated, String catName){
-        super(age, weight, color, vaccinated, catName);
+    Dog(int age, double weight, String color, boolean vaccinated, String dogName){
+        super(age, weight, color, vaccinated, dogName);
     }
 
     @Override

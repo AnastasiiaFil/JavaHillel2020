@@ -5,13 +5,12 @@ public class Fish extends domesticAnimal {
         super(age, weight, color, vaccinated);
     }
 
-    Fish(int age, double weight, String color, boolean vaccinated, String catName){
-        super(age, weight, color, vaccinated, catName);
+    Fish(int age, double weight, String color, boolean vaccinated, String fishName){
+        super(age, weight, color, vaccinated, fishName);
     }
 
     @Override
     public void Voice(){
-//        super.Voice();
         System.out.println(" ...!");
     }
 }
