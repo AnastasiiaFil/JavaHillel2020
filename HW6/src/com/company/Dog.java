@@ -1,6 +1,6 @@
 package com.company;
 
-public class Dog extends  domesticAnimal {
+public class Dog extends  DomesticAnimal {
     Dog(int age, double weight, String color, boolean vaccinated){
         super(age, weight, color, vaccinated);
     }

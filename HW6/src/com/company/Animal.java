@@ -1,6 +1,6 @@
 package com.company;
 
-public abstract class Animal implements IVoice{
+public abstract class Animal implements Voice{
     private int id;
     private int age;
     private double weight;

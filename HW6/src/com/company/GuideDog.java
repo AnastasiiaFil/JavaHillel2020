@@ -1,14 +1,14 @@
 package com.company;
 
-public class guideDog extends domesticAnimal implements ITrained{
+public class GuideDog extends DomesticAnimal implements Trained{
     private boolean trained;
 
-    guideDog(int age, double weight, String color, boolean vaccinated, boolean trained){
+    GuideDog(int age, double weight, String color, boolean vaccinated, boolean trained){
         super(age, weight, color, vaccinated);
         this.trained = trained;
     }
 
-    guideDog(int age, double weight, String color, String gdName, boolean vaccinated, boolean trained){
+    GuideDog(int age, double weight, String color, String gdName, boolean vaccinated, boolean trained){
         super(age, weight, color, gdName, vaccinated);
         this.trained = trained;
     }

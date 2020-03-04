@@ -1,9 +1,9 @@
 package com.company;
 
-public abstract class wildAnimal extends Animal implements IPredator{
+public abstract class WildAnimal extends Animal implements Predator{
     private boolean predator;
 
-    wildAnimal(int age, double weight, String color, boolean predator){
+    WildAnimal(int age, double weight, String color, boolean predator){
         super(age, weight, color);
         this.predator = predator;
     }

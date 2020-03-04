@@ -1,15 +1,15 @@
 package com.company;
 
-public abstract class domesticAnimal extends Animal implements IVaccinated{
+public abstract class DomesticAnimal extends Animal implements Vaccinated{
     private String name;
     private boolean vaccinated;
 
-    domesticAnimal(int age, double weight, String color, boolean vaccinated){
+    DomesticAnimal(int age, double weight, String color, boolean vaccinated){
         super(age, weight, color);
         this.vaccinated = vaccinated;
     }
 
-    domesticAnimal(int age, double weight, String color, String animalName, boolean vaccinated){
+    DomesticAnimal(int age, double weight, String color, String animalName, boolean vaccinated){
         super(age, weight, color);
         this.vaccinated = vaccinated;
         name = animalName;

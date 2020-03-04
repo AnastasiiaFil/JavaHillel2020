@@ -1,5 +1,5 @@
 package com.company;
 
-public interface ITrained {
+public interface Trained {
     boolean isTrained();
 }

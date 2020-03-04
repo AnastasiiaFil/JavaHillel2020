@@ -1,5 +1,5 @@
 package com.company;
 
-public interface IPredator {
+public interface Predator {
     boolean isPredator();
 }

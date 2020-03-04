@@ -1,5 +1,5 @@
 package com.company;
 
-public interface IVaccinated {
+public interface Vaccinated {
     boolean isVaccinated();
 }

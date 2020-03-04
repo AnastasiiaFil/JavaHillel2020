@@ -1,5 +1,5 @@
 package com.company;
 
-public interface IVoice {
+public interface Voice {
        void voice();
 }

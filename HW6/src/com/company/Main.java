@@ -16,7 +16,7 @@ public class Main {
         animals.add(new Lion(3,25,"Yellow",true));
         animals.add(new Giraffe(1, 100, "Mixed",false));
         animals.add(new Crocodile(2,120,"Green",true));
-        guideDog gd = new guideDog(1,4,"Red","Bloo",true,false);
+        GuideDog gd = new GuideDog(1,4,"Red","Bloo",true,false);
         animals.add(gd);
 
         for(Animal i : animals){
