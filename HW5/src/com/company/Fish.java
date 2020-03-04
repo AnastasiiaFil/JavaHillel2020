@@ -1,6 +1,6 @@
 package com.company;
 
-public class Fish extends domesticAnimal {
+public class Fish extends DomesticAnimal {
     Fish(int age, double weight, String color, boolean vaccinated){
         super(age, weight, color, vaccinated);
     }
@@ -10,7 +10,7 @@ public class Fish extends domesticAnimal {
     }
 
     @Override
-    public void Voice(){
+    public void voice(){
         System.out.println(" ...!");
     }
 }

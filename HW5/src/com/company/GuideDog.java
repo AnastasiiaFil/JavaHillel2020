@@ -1,14 +1,14 @@
 package com.company;
 
-public class guideDog extends domesticAnimal{
+public class GuideDog extends DomesticAnimal{
     private boolean isTrained;
 
-    guideDog(int age, double weight, String color, boolean vaccinated, boolean trained){
+    GuideDog(int age, double weight, String color, boolean vaccinated, boolean trained){
         super(age, weight, color, vaccinated);
         isTrained = trained;
     }
 
-    guideDog(int age, double weight, String color, String gdName, boolean vaccinated, boolean trained){
+    GuideDog(int age, double weight, String color, String gdName, boolean vaccinated, boolean trained){
         super(age, weight, color, vaccinated, gdName);
         isTrained = trained;
     }
@@ -21,8 +21,8 @@ public class guideDog extends domesticAnimal{
     }
 
     @Override
-    public void Voice(){
-        super.Voice();
+    public void voice(){
+        super.voice();
         if(isTrained)
             System.out.print(" I'm trained.");
         System.out.println(" Woof-woof-woof!");

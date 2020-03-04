@@ -1,16 +1,16 @@
 package com.company;
 
-public abstract class wildAnimal extends Animal{
+public abstract class WildAnimal extends Animal{
     private boolean isPredator;
 
-    wildAnimal(int age, double weight, String color, boolean predator){
+    WildAnimal(int age, double weight, String color, boolean predator){
         super(age, weight, color);
         isPredator = predator;
     }
 
     @Override
-    public void Voice(){
-        super.Voice();
+    public void voice(){
+        super.voice();
         System.out.print("I am a wild animal");
         if(isPredator)
             System.out.print(" and I am angry");

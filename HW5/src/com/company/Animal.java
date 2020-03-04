@@ -16,7 +16,7 @@ public abstract class Animal {
         this.color = color;
     }
 
-    public void Voice(){
+    public void voice(){
         System.out.print("Hello, ");
     }
 
