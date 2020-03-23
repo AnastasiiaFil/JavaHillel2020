@@ -6,10 +6,10 @@ public class SolvingQuadraticEquation {
     private double b;
     private double c;
 
-    public SolvingQuadraticEquation(double number1, double number2, double number3){
-        this.a = number1;
-        this.b = number2;
-        this.c = number3;
+    public SolvingQuadraticEquation(double a, double b, double c){
+        this.a = a;
+        this.b = b;
+        this.c = c;
     }
 
     public double[] solve(){
