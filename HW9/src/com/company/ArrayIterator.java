@@ -1,16 +1,16 @@
 package com.company;
 import java.util.NoSuchElementException;
 
-public class ArrayIterator {
+public class ArrayIterator<T> {
     private int arraySize;
     private int index = 0;
-    int[] arr = new int[arraySize];
+    T[] arr;
 
     public ArrayIterator(int size){
         this.arraySize = size;
     }
 
-    public void setArray(int[] array) throws Exception {
+    public void setArray(T[] array) throws Exception {
         if(arraySize == array.length){
             arr = array;
         }
@@ -22,7 +22,7 @@ public class ArrayIterator {
         return index < arr.length;
     }
 
-    public int next() {
+    public T next() {
         if(!hasNext())
             throw new NoSuchElementException();
         return arr[index++];
