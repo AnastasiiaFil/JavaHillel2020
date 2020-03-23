@@ -1,7 +1,8 @@
 package com.company;
+import java.util.Iterator;
 import java.util.NoSuchElementException;
 
-public class ArrayIterator<T> {
+public class ArrayIterator<T> implements Iterator {
     private int arraySize;
     private int index = 0;
     T[] arr;
@@ -18,10 +19,12 @@ public class ArrayIterator<T> {
             throw new Exception("Entered array size doesn't fit indicated size");
     }
 
+    @Override
     public boolean hasNext() {
         return index < arr.length;
     }
 
+    @Override
     public T next() {
         if(!hasNext())
             throw new NoSuchElementException();
