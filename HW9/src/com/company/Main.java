@@ -48,10 +48,7 @@ public class Main {
         SolvingQuadraticEquation equationNumbers = new SolvingQuadraticEquation(1.4, 5, 2.6);
         int i = 1;
         System.out.print("\n\nResult of solving quadratic equation (second ex.): ");
-        for(double x : equationNumbers.solve()){
-            System.out.print("X" + i + "= " + x + ";  ");
-            i++;
-        }
+        equationNumbers.solve();
 
 
 
